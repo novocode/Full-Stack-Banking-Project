@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome back Employee! Let's get to work!</title>
+    <link rel="stylesheet" href="./CSSFiles/global.css">
+    <link rel="stylesheet" href="./CSSFiles/employee.css">
+</head>
+<body>
+    <h1>Welcome Employee!</h1>
+    <h2>Are you a new Employee or returning Employee?</h2>
+    <h3>Returning Employee</h3>
+    <input type="button" class="displayBlock" onclick="location.href='./employeeLogin.html';" value="Returning Employee Login" />
+    <h3>New Employee</h3>
+    <form action="newEmployee" method="POST">
+        <div>
+            <input type="text" class="form-control" placeholder="Username" name="username">
+            <input type="text" class="form-control" placeholder="Password" name="password">
+            <input type="text" class="form-control" placeholder="First Name" name="firstname">
+            <input type="text" class="form-control" placeholder="Last Name" name="lastname">
+        </div>
+    </form>
+    <input type="button" id="newHire" class="displayBlock" value="I'm a new hire!" />    
+    <div id="messageDisplay">
+        
+    </div>
+    <input type="button" class="displayBlock" onclick="location.href='./index.html';" value="Go Back" />
+    <script src="./Scripts/employeeInitial.js"></script>
+</body>
+</html>

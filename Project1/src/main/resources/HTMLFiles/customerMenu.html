@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Menu</title>
+    <link rel="stylesheet" href="./CSSFiles/global.css">
+    <link rel="stylesheet" href="./CSSFiles/customer.css">
+</head>
+<body>
+    <div id="messageDisplay">
+        
+    </div>
+    <form>
+        <div>
+            <input type="number" class="form-control" placeholder="Account # from" name="accountFrom">
+            <input type="number" class="form-control" placeholder="Amount" name="amount">
+            <input type="number" class="form-control" placeholder="Account # to Transfer to" name="accountTo">
+            <input type="text" class="form-control" placeholder="Account Type: Checking or Savings" name="accountType">
+        </div>
+    </form>
+    
+    <input type="button" class="displayBlock" id="viewAllButton"  value="View All Accounts" />
+    <input type="button" class="displayBlock" id="withDrawButton"  value="Withdraw" />
+    <input type="button" class="displayBlock" id="depositButton"  value="Deposit" />
+    <input type="button" class="displayBlock" id="transferButton"  value="Transfer" />
+    <input type="button" class="displayBlock" id="applicationButton"  value="Apply for Account" />
+    <input type="button" class="displayBlock" id="logoutButton" value="Logout" />
+    <table id="customerAccounts">
+
+    </table>
+    <script src="./Scripts/customerMenu.js"></script>
+</body>
+</html>

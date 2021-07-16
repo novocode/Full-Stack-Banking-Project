@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Customer for your patronage!</title>
+    <link rel="stylesheet" href="./CSSFiles/global.css">
+    <link rel="stylesheet" href="./CSSFiles/customer.css">
+</head>
+<body>
+    <h1>Welcome Customer!</h1>
+    <h2>Are you a new Customer or returning Customer?</h2>
+    <h3>Returning Customer</h3>
+    <input type="button" class="displayBlock" onclick="location.href='./customerLogin.html';" value="Returning Customer Login" />
+    <h3>New Customer</h3>
+    <form>
+        <div>
+            <input type="text" class="form-control" placeholder="Username" name="username">
+            <input type="text" class="form-control" placeholder="Password" name="password">
+            <input type="text" class="form-control" placeholder="First Name" name="firstname">
+            <input type="text" class="form-control" placeholder="Last Name" name="lastname">
+            <input type="number" class="form-control" placeholder="Social Security Number" name="ssn">
+        </div>
+    </form>
+    <input type="button" id="newCust" class="displayBlock" value="I want to be a customer!" />
+    <div id="messageDisplay">
+        
+    </div>
+    <input type="button" class="displayBlock" onclick="location.href='./index.html';" value="Go Back" />
+    <script src="./Scripts/customerInitial.js"></script>
+</body>
+</html>
